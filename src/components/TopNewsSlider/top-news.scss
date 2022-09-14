@@ -1,0 +1,54 @@
+@import "./../../assets/scss/color.scss";
+.top-slider-wrapper {
+    position: relative;
+    .slick-slider {
+        .slick-list {
+            .slick-track {
+                .slick-slide {
+                    &>div {
+                        .weekly-single {
+                            margin-left: 0px;
+                            margin-right: 0px;
+                            padding: 0px 15px;
+                        }
+                    }
+                    // &.slick-active {
+                    //     .weekly-single {
+                    //         .weekly-caption {
+                    //             opacity: 1;
+                    //             visibility: visible;
+                    //             bottom: 20px;
+                    //         }
+                    //     }
+                    // }
+                }
+            }
+        }
+        .slick-dots {
+            li {
+                button {
+                    padding: 0px;
+                    &:before {
+                        width: 8px;
+                        height: 8px;
+                        content: '';
+                        background-color: $theme-color;
+                        border-radius: 4px;
+                        top: 6px;
+                        left: 6px;
+                    }
+                }
+                &.slick-active {
+                    width: auto;
+                    button {
+                        padding: 0px;
+                        width: 42px;
+                        &:before {
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,20 +1,19 @@
 import * as React from "react";
-import { Container, Row, Col, Carousel } from "react-bootstrap";
-import Layout from "./components/layout/layout";
+// import { Container, Row, Col, Carousel } from "react-bootstrap";
+import AllRoutes from "./route/route";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import "./assets/scss/style.scss";
 
-const IndexPage = () => {
+const App = () => {
   return (
-    <Layout>
-      <>
-        <h1>Index Page</h1>
-      </>
-    </Layout>
+    <>
+      <AllRoutes />
+      <h1>Index Page</h1>
+    </>
   );
 };
 
-export default IndexPage;
+export default App;
